@@ -20,9 +20,9 @@ const Header: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box w="100vw" h="20vh" as="header" position="fixed">
+    <Box w="100vw" h="20vh" as="header" position="fixed" top={0}>
       <Flex justify="center" width="full" shadow="sm" top={0} py={4} px={8}>
-        <Box p="4" bg="red.400">
+        <Box p="4">
           <Text fontSize="2xl">MIRAIDOs</Text>
         </Box>
         <Spacer />
@@ -42,7 +42,10 @@ const Header: React.FC = () => {
             <Box>CONTACT</Box>
           </VStack>
         </Box>
-        <Box pt={3}>
+        <Box
+          pt={3}
+          display={{ base: "flex", sm: "flex", md: "flex", lg: "none" }}
+        >
           <IconButton
             bg="transparent"
             aria-label="search"
