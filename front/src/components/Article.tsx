@@ -5,7 +5,7 @@ import ConceptFigure from "./ConceptFigure";
 
 const Article: React.FC = () => {
   return (
-    <Box>
+    <Box marginBottom="10%">
       <Grid
         templateColumns={{
           base: "repeat(1, 1fr)",
