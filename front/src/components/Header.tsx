@@ -21,7 +21,7 @@ const Header: React.FC = () => {
 
   return (
     <Box w="100vw" h="20vh" as="header" position="fixed" top={0}>
-      <Flex justify="center" width="full" shadow="sm" top={0} py={4} px={8}>
+      <Flex justify="center" width="full" top={0} py={4} px={8}>
         <Box p="4">
           <Text fontSize="2xl">MIRAIDOs</Text>
         </Box>
