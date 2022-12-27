@@ -5,6 +5,7 @@ import Slider from "./components/Slider";
 import Article from "./components/Article";
 import Tiles from "./components/Tiles";
 import Topic from "./components/Topic";
+import QueryForm from "./components/QueryForm";
 import "./App.css";
 import { ChakraProvider, Box } from "@chakra-ui/react";
 import { theme } from "./Theme";
@@ -30,6 +31,7 @@ function App(): JSX.Element {
             tiles={mediaTiles}
           />
           <Topic />
+          <QueryForm />
         </Box>
       </Box>
     </ChakraProvider>
