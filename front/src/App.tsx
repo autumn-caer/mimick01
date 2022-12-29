@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import Slider from "./components/Slider";
 import Article from "./components/Article";
 import Tiles from "./components/Tiles";
+import Topic from "./components/Topic";
+import QueryForm from "./components/QueryForm";
 import "./App.css";
 import { ChakraProvider, Box } from "@chakra-ui/react";
 import { theme } from "./Theme";
@@ -28,6 +30,8 @@ function App(): JSX.Element {
             description="こちらでもMIMICK01のことをお話ししています"
             tiles={mediaTiles}
           />
+          <Topic />
+          <QueryForm />
         </Box>
       </Box>
     </ChakraProvider>
